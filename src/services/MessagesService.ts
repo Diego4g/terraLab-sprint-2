@@ -27,7 +27,8 @@ export class MessageService {
     const messagesRepository = getCustomRepository(MessagesRepository);
 
     const list = messagesRepository.find({
-      where: user_id,
+      where: { user_id },
+      relations: ["user"],
     });
 
     return list;
