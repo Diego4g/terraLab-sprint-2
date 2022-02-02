@@ -22,4 +22,14 @@ export class MessageService {
 
     return message;
   }
+
+  async listByUser(user_id: string) {
+    const messagesRepository = getCustomRepository(MessagesRepository);
+
+    const list = messagesRepository.find({
+      where: user_id,
+    });
+
+    return list;
+  }
 }

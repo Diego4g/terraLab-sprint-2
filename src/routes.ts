@@ -10,8 +10,8 @@ const settingsController = new SettingsController();
 const usersController = new UsersController();
 const messagesController = new MessagesController();
 
-routes.post("/settings", settingsController.handle);
-routes.post("/users", usersController.handle);
-routes.post("/message", messagesController.handle);
+routes.post("/settings", settingsController.create);
+routes.post("/users", usersController.create);
+routes.post("/message", messagesController.create);
 
 export { routes };

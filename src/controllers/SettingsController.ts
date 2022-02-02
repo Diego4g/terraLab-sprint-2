@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 import { SettingsService } from "../services/SettingsService";
 
 export class SettingsController {
-  async handle(request: Request, response: Response): Promise<Response> {
+  async create(request: Request, response: Response): Promise<Response> {
     const { chat, username } = request.body;
 
     const settingsService = new SettingsService();
