@@ -9,7 +9,7 @@ interface IMessageCreate {
   user_id: string;
 }
 
-export class MessageService {
+export class MessagesService {
   private messagesRepository: Repository<Message>;
 
   constructor() {
