@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const socket = io();
 let connectionsUsers = [];
 const connectionInSupport = []; // Cria uma variavel para armazenar os atendimentos
